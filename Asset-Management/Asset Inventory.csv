@@ -1,0 +1,87 @@
+,,,Asset Inventory Table ,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,Hardware Assets,,,,,
+,,,,,,,,
+,,,,,,,,
+Asset ID,Asset Name,Category,Description,Owner,Location,Classification,Value,Dependencies
+HW-01,Lab PCs Batch-1,Hardware,Student lab workstations,Lab Engineer,Fintech Lab,Internal,Medium,OS image + Network
+HW-02,Lab PCs Batch-2,Hardware,Student lab PCs,Lab Engineer,Fintech Lab,Internal,Medium,Network + Software tools
+HW-03,Faculty Office PC 1,Hardware,Faculty workstation,Faculty Member,A&F Office,Confidential,High,ERP + Email
+HW-04,Faculty Office PC 2,Hardware,Staff workstation,Finance Officer,A&F Office,Confidential,High,ERP + Cloud
+HW-05,Finance Laptop 1,Hardware,Used for payroll & finance data,Payroll Officer,A&F Office,Confidential,High,Payroll System
+HW-06,Finance Laptop 2,Hardware,Used for budget & vendor payments,Senior Accountant,A&F Office,Confidential,High,ERP
+HW-07,NAS Storage Drive,Hardware,Local shared drive for department,IT Dept,Server Corner,Confidential,High,Network + Backups
+HW-08,UPS Battery Backup,Hardware,Power backup for finance & lab,Admin,A&F Block,Internal,Medium,Power System
+HW-09,Network Switch 24-Port,Hardware,Department switch for LAN,IT Dept,A&F Block,Internal,High,VLAN + Firewall
+HW-10,Printers/Scanners,Hardware,Document printing & scanning,A&F Staff,A&F Block,Internal,Medium,PCs
+HW-11,CCTV Cameras,Hardware,Security monitoring devices,Admin,A&F Block,Internal,Medium,NVR System
+,,,,,,,,
+,,,,,,,,
+,,,Software Assets,,,,,
+,,,,,,,,
+,,,,,,,,
+Asset ID,Asset Name,Category,Description,Owner,Location,Classification,Value,Dependencies
+SW-01,Windows OS,Software,OS for lab & office PCs,IT Dept,All Systems,Internal,Medium,Updates Server
+SW-02,Linux OS (Lab Systems),Software,Installed in Fintech lab,Lab Engineer,Fintech Lab,Internal,Medium,Lab Tools
+SW-03,MS Office Suite,Software,Word/Excel for finance tasks,Finance Staff,All PCs,Internal,Medium,License Server
+SW-04,ERP Finance Module,Software,Core financial system,Head of A&F,Cloud + Local PC,Confidential,High,Cloud DB
+SW-05,Payroll Management Software,Software,Salary & benefits processing,Payroll Officer,A&F Office,Confidential,High,HR Data
+SW-06,Vendor & Procurement System,Software,Vendor payments & contracts,Procurement Officer,Cloud,Confidential,High,Bank API
+SW-07,MySQL / PostgreSQL,Software,Database servers for lab,Lab Engineer,Fintech Lab,Internal,Medium,Lab Apps
+SW-08,Python/Anaconda,Software,Installed for teaching/labs,Faculty & Students,Fintech Lab,Internal,Medium,Lab OS
+SW-09,RStudio / R Tools,Software,Statistics & data analysis,Faculty,Fintech Lab,Internal,Medium,R package libs
+SW-10,Oracle / Peach Tree,Software,Used for finance/lab practice,Faculty,Fintech Lab,Confidential,Medium,License
+SW-11,Antivirus (ESET/Windows Defender),Software,Malware protection,IT Dept,All PCs,Internal,Medium,Update Server
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,Data Assets (most important category),,,,,
+,,,,,,,,
+,,,,,,,,
+Asset ID,Asset Name,Category,Description,Owner,Location,Classification,Value,Dependencies
+DA-01,Student Fee Records,Data,Fee challans/ dues/ payments,Accountant,ERP Cloud,Confidential,High,ERP
+DA-02,Payroll Records,Data,Salary slips & employee financial data,Payroll Officer,Payroll System,Confidential,High,Payroll System
+DA-03,Vendor Invoices & Contracts,Data,Procurement financial data,Procurement Officer,System + Cabinets,Confidential,High,Vendor Portal
+DA-04,Budget Documents,Data,Annual budgets & financial forecasts,Head of A&F,NAS/Cloud,Internal,High,Excel
+DA-05,Audit Reports,Data,Internal/external audit files,Internal Audit,Shared Drive,Confidential,High,ERP
+DA-06,Exam Papers & Solutions,Data,Exam material (highly sensitive),Faculty,A&F Offices,Confidential,High,Printer + Storage
+DA-07,Student Personal Records,Data,Names/ IDs/ transcripts,Finance/Faculty,Cloud + Office Files,Confidential,High,ERP + LMS
+DA-08,Attendance Sheets,Data,Student attendance for courses,Faculty,Office Files,Internal,Medium,Office Docs
+DA-09,Research & Project Submissions,Data,FYPs & research,Faculty,Fintech Lab PCs,Internal,Medium,Lab Machines
+DA-10,Letters & Correspondence,Data,Official administrative letters,Admin Staff,Office Cabinets,Internal,Medium,Print/Scan
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,Cloud Assets,,,,,
+,,,,,,,,
+,,,,,,,,
+Asset ID,Asset Name,Category,Description,Owner,Location,Classification,Value,Dependencies
+CL-01,OneDrive Cloud Storage,Cloud,Stores finance files,Faculty + Finance Staff,Microsoft Cloud,Confidential,High,MFA
+CL-02,Cloud ERP Database,Cloud,Stores all financial data,ERP Vendor,Cloud,Confidential,High,Internet
+CL-03,Shared Network Drives,Cloud/Network,Used for departmental storage,IT Dept,NAS/Cloud,Internal,High,LAN
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,Network Assets,,,,,
+,,,,,,,,
+,,,,,,,,
+Asset ID,Asset Name,Category,Description,Owner,Location,Classification,Value,Dependencies
+NT-01,Finance VLAN,Network,Department isolated network,IT Dept,A&F Block,Confidential,High,Switch + Firewall
+NT-02,Fintech Lab Network,Network,Student lab network,IT Dept,Fintech Lab,Internal,Medium,VLAN
+NT-03,Wi-Fi AP (Finance Block),Network,Staff Wi-Fi,IT Dept,Finance Block,Internal,Medium,Network Passkey
+NT-04,Firewall Ruleset,Network,Protects against unauthorized access,IT Dept,Main Server Room,Confidential,High,Firewall Device
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,Physical Assets,,,,,
+,,,,,,,,
+,,,,,,,,
+Asset ID,Asset Name,Category,Description,Owner,Location,Classification,Value,Dependencies
+PH-01,Finance File Cabinet,Physical,Stores financial documents,A&F Staff,Office,Confidential,High,Physical Lock
+PH-02,Exam Paper Storage Cabinet,Physical,Stores exam papers,Faculty,A&F Offices,Confidential,High,Lock + Room Access
+PH-03,Secure Drawer (Payroll),Physical,Stores salary hardcopies,Payroll Officer,Payroll Desk,Confidential,Medium,Drawer Key
+PH-04,Visitor Logbook,Physical,Visitor record book,Admin,Reception,Internal,Low,Manual Process
+PH-05,Whiteboards with content,Physical,Teaching material,Faculty,Fintech Lab,Internal,Low,Erasable
